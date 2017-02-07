@@ -99,6 +99,9 @@ TEMPLATE_CONTEXT_PROCESSORS = (
                          and thus it is expected that there is a named "page" argument in the
                          URL referenced by **url_view_name**. This allows us to use pretty
                          pagination URLs such as "/page/1"
+- **url_get_params** - The other get parameters to pass, only the page
+                         number will be overwritten. Use this to preserve
+                         filters.
 
 **Basic Usage**
 
@@ -189,6 +192,9 @@ simply provides a Previous and Next link.
                          URL referenced by **url_view_name**. This allows us to use pretty
                          pagination URLs such as "/page/1"
 - **url_anchor** - The anchor to use in URLs. Defaults to None
+- **url_get_params** - The other get parameters to pass, only the page
+                         number will be overwritten. Use this to preserve
+                         filters.
 
 **Usage**
 
